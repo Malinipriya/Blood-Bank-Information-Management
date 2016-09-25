@@ -1,0 +1,1 @@
+Blood Bank Information Management System is an online application that would enable people to find, donate and purchase blood. It provides the user (donor and recipient) with registration, login, product definition, and update features.
