@@ -1,0 +1,116 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<script>
+function geturl()
+{
+var url=document.URL;
+var array=url.split("&");
+var uname=array[0].split("=");
+document.getElementById("purchaserlogin").value=uname[1];
+}
+function alertfunc()
+{
+alert("Payment Done! Cost: Rs.1000/-");
+}
+</script>
+</head>
+<body onload="geturl()">
+
+<div id="header1" style="width:1350px;">
+
+<h2>
+<font  face="Algerian" color="Black">CrimsonBloodBank
+<img src="bb1.jpg" alt="blood drop" width="25" height="25">Com
+</font>
+<a href="bb.html">
+<img border="0" alt="home" src="home.jpg" width="50" height="50" align="right">
+</a>
+</h2>
+</div>
+
+<div id="header2" style="width:1350pX;background-color:darkred">
+
+<h3>
+<pre>
+<font  face="Algerian" color="white" size="4"><body link="white"><body vlink="orange"><a href="register.html" target="_blank">                                      Register free      </a><a href="donate.html" target="_blank">Why Donate Blood?     </a><a href="tips.html" target="_blank">Blood Tips     </a><a href="facts.html" target="_blank">Blood Facts     </a><a href="contact.html" target="_blank">Contact Us</a></font>
+</pre>
+</h3>
+</div>
+
+
+<div id="register" style="float:left;width:350px" >
+
+<font  face="Algerian" color="Green"  size="4">Payment<br><br></font>
+
+<form name="donor" method="get" onSubmit="alertfunc()">
+<pre>
+<font  face="Comic Sans MS" color="Green"  size="3">
+Donor name <input type="text" name="purchaserlogin" id="purchaserlogin" readOnly="true" >
+Select your card type:  <input type="radio" name="card" value="Mastercard">Mastercard
+                                   <input type="radio" name="card" value="Visa">Visa
+
+Card Number          <input type="password" name="cardnumber1" size="2">-<input type="password" name="cardnumber2" size="2">-<input type="password" name="cardnumber3" size="2">-<input type="password" name="cardnumber4" size="2">						
+Expiry Date           <select name="day">
+<option value="DD">DD</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="13">13</option>
+<option value="14">14</option>
+<option value="15">15</option>
+<option value="16">16</option>
+<option value="17">17</option>
+<option value="18">18</option>
+<option value="19">19</option>
+<option value="20">20</option>
+<option value="21">21</option>
+<option value="22">22</option>
+<option value="23">23</option>
+<option value="24">24</option>
+<option value="25">25</option>
+<option value="26">26</option>
+<option value="27">27</option>
+<option value="28">28</option>
+<option value="29">29</option>
+<option value="30">30</option>
+<option value="31">31</option></select><select name="month">
+<option value="MM">MM</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option></select><input type="text" name="year" size="9" value="Year">		
+
+</font>
+
+<input type="submit" value="Pay" name="search" style="background-color:red;color:white;">
+</form>
+</pre>
+
+</div>
+
+<div id="picture" style="width:500px;float:right">
+<img src="bb3.jpg" alt="bb" width="500" height="500">
+</div>
+
+
+
+</body>
+</html>

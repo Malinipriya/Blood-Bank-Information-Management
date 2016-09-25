@@ -1,0 +1,71 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<script>
+function geturl()
+{
+var url=document.URL;
+var array=url.split("&");
+var uname=array[0].split("=");
+document.getElementById("username").value=uname[1];
+}
+function load()
+{
+var otext;
+otext=document.getElementById('username');
+location.href='donation.html?login='+otext.value;
+}
+function load1()
+{
+var otext;
+otext=document.getElementById('username');
+location.href ='update.html?login='+otext.value;
+}
+</script>
+
+</head>
+<body onload="geturl()">
+
+<div id="header1" style="width:1350px;">
+
+<h2>
+<font  face="Algerian" color="Black">CrimsonBloodBank
+<img src="bb1.jpg" alt="blood drop" width="25" height="25">Com
+</font>
+<a href="bb.html">
+<img border="0" alt="home" src="home.jpg" width="50" height="50" align="right">
+</a>
+</h2>
+</div>
+
+<div id="header2" style="width:1350pX;background-color:darkred">
+
+<h3>
+<pre>
+<font  face="Algerian" color="white" size="4"><body link="white"><body vlink="orange"><a href="register.html" target="_blank">                                      Register free      </a><a href="donate.html" target="_blank">Why Donate Blood?     </a><a href="tips.html" target="_blank">Blood Tips     </a><a href="facts.html" target="_blank">Blood Facts     </a><a href="contact.html" target="_blank">Contact Us</a></font>
+</pre>
+</h3>
+</div>
+
+<div id="donor" style="width:750px; height:500px; float:left; background-color:papayawhip">
+<font  face="Algerian" color="Red" size="5">
+Welcome, Administrator!		<br/><br/>
+<form name="donor" method="get" action="http://localhost:8080/oad/donordetails" >
+<input type="submit" value="Donor" name="donor" style="background-color:red;color:white">
+</form>
+
+<form name="pruchaser" method="get" action="http://localhost:8080/oad/purchaserdetails" >
+<input type="submit" value="Purchaser" name="purchaser" style="background-color:red;color:white">
+</form>
+
+
+<img src="bb12.jpg" alt="bb" width="300" height="300">
+</font>
+</div>
+
+<div id="picture" style="width:500px;float:right">
+<img src="bb11.jpg" alt="bb" width="500" height="500">
+</div>
+
+</body>
+</html>

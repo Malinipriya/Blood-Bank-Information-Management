@@ -1,0 +1,85 @@
+<html>
+<head>
+<meta http-equiv='Content-Type' content='text/html; charset=UTF-8'>
+<script>
+function validate()
+{
+var value=true;
+if(document.getElementById("password").value!=document.getElementById("cpassword").value)
+ {
+    alert("Passwords do not match");
+    value=false;
+    document.getElementById("password").value="";
+    document.getElementById("cpassword").value="";
+ }
+ return value;
+}
+</script>
+</head>
+<body>
+
+<div id="header1" style="width:1350px;">
+
+<h2>
+<font  face="Algerian" color="Black">CrimsonBloodBank
+<img src="bb1.jpg" alt="blood drop" width="25" height="25">Com
+</font>
+<a href="bb.html">
+<img border="0" alt="home" src="home.jpg" width="50" height="50" align="right">
+</a>
+</h2>
+</div>
+
+<div id="header2" style="width:1350pX;background-color:darkred">
+
+<h3>
+<pre>
+<font  face="Algerian" color="white" size="4"><body link="white"><body vlink="orange"><a href="register.html" target="_blank">                                      Register free      </a><a href="donate.html" target="_blank">Why Donate Blood?     </a><a href="tips.html" target="_blank">Blood Tips     </a><a href="facts.html" target="_blank">Blood Facts     </a><a href="contact.html" target="_blank">Contact Us</a></font>
+</pre>
+</h3>
+</div>
+
+
+<div id="register" style="float:left;width:350px" >
+
+<font  face="Algerian" color="Green"  size="4">Purchaser Registration<br><br></font>
+
+<form name="donor" method="get" action="http://localhost:8080/oad/searchplace" onSubmit="return validate()">
+<pre>
+<font  face="Algerian" color="black"  size="2">
+Name          <input type="text" name="name">								User Name                 <input type="text" name="username">
+<font  face="Comic Sans MS" color="Green"  size="2">						              			             		</font>
+
+Password <input type="password" name="password" id="password">								Confirm Password <input type="password" name="cnfpwd" id="cpassword">
+<font  face="Comic Sans MS" color="Green"  size="2">						                                                      Please re-enter your password
+</font>
+							
+Mobile       <input type="text" name="mobile">							         E-mail                          <input type="text" name="email">							
+
+Age             <input type="text" name="age" id="age">	
+
+
+Please choose a Blood Group to search
+
+Blood Bank Area    <select name="area">
+<option value="Adyar">Adyar</option>
+<option value="Tambaram">Tambaram</option>
+<option value="Velachery">Velachery</option>
+</select>	       
+
+
+
+<input type="submit" value="search" name="search" style="background-color:red;color:white;float:right">
+</form>
+</pre>
+
+</div>
+
+<div id="picture" style="width:500px;float:right">
+<img src="bb3.jpg" alt="bb" width="500" height="500">
+</div>
+
+
+
+</body>
+</html>
